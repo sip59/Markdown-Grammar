@@ -30,6 +30,7 @@ Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
   
 任何数量的 = 和 - 都可以有效果。
   
+<br>
   
 类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：
 <p>## 一级标题</p>
@@ -65,7 +66,7 @@ Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
 > 
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
-  
+  <br>
 Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
 <p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</p>
 <p>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<p/>
@@ -83,7 +84,7 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
   
-  
+  <br>
 区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 > ：
 <p> This is the first level of quoting.</p>
 <p>></p>
@@ -99,7 +100,7 @@ id sem consectetuer libero luctus adipiscing.
 >
 > Back to the first level.
   
-  
+<br>
 引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：
 <p>> ## 这是一个标题。</p>
 <p>> </p>
@@ -122,4 +123,104 @@ id sem consectetuer libero luctus adipiscing.
 >     return shell_exec("echo $input | $markdown_script");
   
 任何像样的文本编辑器都能轻松地建立 email 型的引用。例如在 BBEdit 中，你可以选取文字后然后从选单中选择增加引用阶层。
+  
+  
+### 3.3 列表
+Markdown 支持有序列表和无序列表。
+  
+无序列表使用星号（*）、加号（+）或是减号（-）作为列表标记：
+> \* Big<br>
+> \* Middle<br>
+> \* Small<br>
 
+等同于：
+> \+ Big<br>
+> \+ Middle<br>
+> \+ Small<br>
+
+也等同于：
+> \- Big<br>
+> \- Middle<br>
+> \- Small<br>
+  
+效果：
+* Big
+* Middle
+* Small
+  
+有序列表则使用数字接着一个英文句点：
+<p> 1. Bird</p>
+<p> 2. McHale</p>
+<p> 3. Parish</p>
+  
+列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。
+
+要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：
+<p>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<p>    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</p>
+<p>    viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>    > This is a blockquote</p>
+<p>    ></p>
+<p>    > inside a list item.</p>
+<p>*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.</p>
+<p>    Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+  
+效果：
+*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+    > This is a blockquote
+    >
+    > inside a list item.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+
+    
+### 3.4 代码区块
+和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 \<pre> 和 \<code> 标签来把代码区块包起来。
+
+要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：
+
+    <pre><code>
+    public static String logTimeOfDay(long millis) {
+        Calendar c = Calendar.getInstance();
+        if (millis >= 0) {
+            c.setTimeInMillis(millis);
+            return String.format("%tm-%td %tH:%tM:%tS.%tL", c, c, c, c, c, c);
+        } else {
+            return Long.toString(millis);
+        }
+    }
+    </code></pre>
+
+效果：
+<pre><code>public static String logTimeOfDay(long millis) {
+    Calendar c = Calendar.getInstance();
+    if (millis >= 0) {
+        c.setTimeInMillis(millis);
+        return String.format("%tm-%td %tH:%tM:%tS.%tL", c, c, c, c, c, c);
+    } else {
+        return Long.toString(millis);
+    }
+}
+</code></pre>
+  
+### 3.4 分隔线
+你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
+
+    ***
+    * * *
+    ******
+    - - - -
+    -------------
+    _ _ _ _
+    _______
+
+效果：
+***
+* * *
+******
+- - - -
+-------------
+_ _ _ _
+_______
