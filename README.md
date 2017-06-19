@@ -278,12 +278,12 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 参考式的图片语法则长得像这样：
   
     ![Alt text][id]
-    「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：
+    「id」是图片参考的名称，图片参考的定义方式则和链接参考一样：
     [id]: url/to/image  "Optional title attribute"
 
 例子：
-
-[pig]: "https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig3.jpg" "peppa-pig"
-![小猪佩奇][pig]
+  
+[pig4]: https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig3.jpg "peppa=pig"
+![小猪佩奇][pig4]
   
   
