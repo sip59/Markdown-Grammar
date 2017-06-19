@@ -161,15 +161,15 @@ Markdown 支持有序列表和无序列表。
 * Small
   
 #### 3.3.2 有序列表则使用数字接着一个英文句点：
-<p> 1. Bird</p>
-<p> 2. McHale</p>
-<p> 3. Parish</p>
+><p> 1. Bird</p>
+><p> 2. McHale</p>
+><p> 3. Parish</p>
   
 效果:
   
-1. Bird
-2. McHale
-3. Parish
+>1. Bird
+>2. McHale
+>3. Parish
   
 列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。
 
@@ -370,8 +370,10 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
   
     <lugl1@motorola.com>
   
+
 效果：
   
+
 <http://www.google.com>
   
 <lugl1@motorola.com>
