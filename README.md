@@ -242,31 +242,8 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 效果：
 This is [an example](http://example.com/ "Title") inline link.
   
-### 3.7 强调
-  
-Markdown 使用星号（*）和底线（_）作为标记强调字词的符号，被 * 或 _ 包围的字词会被转成用 <em> 标签包围，用两个 * 或 _ 包起来的话，则会被转成 <strong>，例如：
+### 3.7 代码
   
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-  
-效果：
-  
->*single asterisks*
->
->_single underscores_
->
->**double asterisks**
->
->__double underscores__
->
-  
-    
-### 3.8 代码
 如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：
   
     Use the `printf()` function.
