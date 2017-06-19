@@ -49,7 +49,10 @@ Markdown 支持两种标题的语法，**类 Setext** 和 **类 atx 形式**。
 
 
 ### 3.2 区块引用
-+ Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 > ：
+Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 > ：
+  
+例子：
+  
 <p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</p>
 <p>> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<p/>
 <p>> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
