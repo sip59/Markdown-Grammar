@@ -1,12 +1,12 @@
 
 ## 1. Markdown是什么？
-+ Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。
+Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。
 
 ## 2. Markdown的一些优点
-+ **纯文本，所以兼容性极强，可以用所有文本编辑器打开。**
-+ **让你专注于文字而不是排版。**
-+ **格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。**
-+ **Markdown 的标记语法有极好的可读性。**
++ 纯文本，所以兼容性极强，可以用所有文本编辑器打开。
++ 让你专注于文字而不是排版。
++ 格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。
++ Markdown 的标记语法有极好的可读性。
 
 ## 3. 常用的语法及例子
 ### 3.1 标题
@@ -71,10 +71,14 @@ Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如�
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 > id sem consectetuer libero luctus adipiscing.
 
-  
-  
+  
+<br/><br/>
 
 Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
+  
+
+例子：
+  
 <p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</p>
 <p>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<p/>
 <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
@@ -82,6 +86,7 @@ Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
 <p>> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</p>
 <p>id sem consectetuer libero luctus adipiscing.</p>
   
+
 效果：
   
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
