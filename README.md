@@ -156,9 +156,9 @@ Markdown 支持有序列表和无序列表。
 > \- Small<br>
   
 效果：
-* Big
-* Middle
-* Small
+>* Big
+>* Middle
+>* Small
   
 #### 3.3.2 有序列表则使用数字接着一个英文句点：
 ><p> 1. Bird</p>
