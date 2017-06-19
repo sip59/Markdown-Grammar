@@ -211,7 +211,7 @@ Markdown 支持有序列表和无序列表。
 }
 </code></pre>
   
-### 3.4 分隔线
+### 3.5 分隔线
 你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
 
     ***
@@ -230,3 +230,55 @@ Markdown 支持有序列表和无序列表。
 -----------
 _ _ _ _
 _______
+
+  
+### 3.6 链接
+Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。
+不管是哪一种，链接文字都是用 [方括号] 来标记。
+要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：
+  
+<p>This is [an example](http://example.com/ "Title") inline link.</p>
+  
+效果：
+This is [an example](http://example.com/ "Title") inline link.
+  
+### 3.7 强调
+  
+Markdown 使用星号（*）和底线（_）作为标记强调字词的符号，被 * 或 _ 包围的字词会被转成用 <em> 标签包围，用两个 * 或 _ 包起来的话，则会被转成 <strong>，例如：
+  
+    *single asterisks*
+
+    _single underscores_
+
+    **double asterisks**
+
+    __double underscores__
+  
+效果：
+  
+>*single asterisks*
+>
+>_single underscores_
+>
+>**double asterisks**
+>
+>__double underscores__
+>
+  
+    
+### 3.8 代码
+如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：
+  
+    Use the `printf()` function.
+  
+效果：
+  
+Use the `printf()` function.
+  
+如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：
+  
+    ``There is a literal backtick (`) here.``
+  
+效果：
+  
+``There is a literal backtick (`) here.``
