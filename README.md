@@ -235,13 +235,38 @@ _______
 ### 3.6 链接
 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。
 不管是哪一种，链接文字都是用 [方括号] 来标记。
-要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：
+行内式链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：
   
 <p>This is [an example](http://example.com/ "Title") inline link.</p>
   
 效果：
 This is [an example](http://example.com/ "Title") inline link.
+
   
+参考式链接，是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：
+  
+    This is [an example][id] reference-style link.
+  
+你也可以选择性地在两个方括号中间加上一个空格：
+  
+    This is [an example] [id] reference-style link.
+  
+接着，在文件的任意处，你可以把这个标记的链接内容定义出来：
+
+    [id]: http://example.com/  "Optional Title Here"
+  
+  
+例子：
+  
+    [lugl1]:http://www.google.com/ "Google"
+    This is [Google site][lugl1].
+  
+效果：
+  
+[lugl1]:http://www.google.com/ "Google"
+This is [Google site][lugl1].
+
+  
 ### 3.7 代码
   
 如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如：
@@ -292,3 +317,49 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 ![小猪佩奇][pig4]
   
   
+### 3.9 其他
+反斜杠
+Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果，你可以在星号的前面加上反斜杠：
+  
+  
+例子：
+  
+\\\*I like star.\\\*
+  
+效果：
+  
+\*I like star.\*
+
+Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
+  
+    \   反斜线
+    `   反引号
+    *   星号
+    _   底线
+    {}  花括号
+    []  方括号
+    ()  括弧
+    #   井字号
+    +   加号
+    -   减号
+    .   英文句点
+    !   惊叹号
+
+
+自动链接
+Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样.
+  
+例如：
+  
+    <http://www.google.com>
+  
+    <lugl1@motorola.com>
+  
+效果：
+  
+<http://www.google.com>
+  
+<lugl1@motorola.com>
+
+
+
