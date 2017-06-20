@@ -250,6 +250,35 @@ Markdown 支持有序列表和无序列表。
     }
 }
 </code></pre>
+
+使用3个点，然后带上代码的语言，在显示上就会有对应语言的一些突显。
+例如：
+
+    ```java
+    public static String logTimeOfDay(long millis) {
+        Calendar c = Calendar.getInstance();
+        if (millis >= 0) {
+            c.setTimeInMillis(millis);
+            return String.format("%tm-%td %tH:%tM:%tS.%tL", c, c, c, c, c, c);
+        } else {
+            return Long.toString(millis);
+        }
+    }
+    ```
+
+效果：
+
+```java
+public static String logTimeOfDay(long millis) {
+    Calendar c = Calendar.getInstance();
+    if (millis >= 0) {
+        c.setTimeInMillis(millis);
+        return String.format("%tm-%td %tH:%tM:%tS.%tL", c, c, c, c, c, c);
+    } else {
+        return Long.toString(millis);
+    }
+}
+```
   
 ### 3.5 分隔线
 你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
