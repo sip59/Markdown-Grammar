@@ -360,9 +360,10 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 
 >![小猪佩奇](https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig2.jpg)
 
-<br />
-    ![小猪佩奇](/peppa_pig.jpg "peppa pig")
+  
 
+    ![小猪佩奇](/peppa_pig.jpg "peppa pig")
+  
 效果：
 
 >![小猪佩奇](/peppa_pig.jpg "peppa pig")
