@@ -32,12 +32,13 @@ Markdown 支持两种标题的语法，**类 Setext** 和 **类 atx 形式**。
   
   
 #### 3.1.2 类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：
-><p># 一级标题</p>
-><p>## 二级标题</p>
-><p>### 三级标题</p>
-><p>#### 四级标题</p>
-><p>##### 五级标题</p>
-><p>###### 六级标题</p>
+
+    # 一级标题
+    ## 二级标题
+    ### 三级标题
+    #### 四级标题
+    ##### 五级标题
+    ###### 六级标题
 
 效果：
 ># 一级标题
@@ -141,19 +142,22 @@ id sem consectetuer libero luctus adipiscing.
 Markdown 支持有序列表和无序列表。
   
 #### 3.3.1 无序列表使用星号（*）、加号（+）或是减号（-）作为列表标记,若不在引用区块中，必须和前方段落之间存在空行。
-> \* Big<br>
-> \* Middle<br>
-> \* Small<br>
+
+    * Big
+    * Middle
+    * Small
 
 等同于：
-> \+ Big<br>
-> \+ Middle<br>
-> \+ Small<br>
+
+    + Big
+    + Middle
+    + Small
 
 也等同于：
-> \- Big<br>
-> \- Middle<br>
-> \- Small<br>
+
+    - Big
+    - Middle
+    - Small
   
 效果：
 >* Big
@@ -161,12 +165,13 @@ Markdown 支持有序列表和无序列表。
 >* Small
   
 #### 3.3.2 有序列表则使用数字接着一个英文句点：
-><p> 1. Bird</p>
-><p> 2. McHale</p>
-><p> 3. Parish</p>
-  
+
+    1. Bird
+    2. McHale
+    3. Parish
+
 效果:
-  
+
 >1. Bird
 >2. McHale
 >3. Parish
@@ -174,14 +179,15 @@ Markdown 支持有序列表和无序列表。
 列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。
 
 要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：
-<p>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-<p>    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,</p>
-<p>    viverra nec, fringilla in, laoreet vitae, risus.</p>
-<p>    > This is a blockquote</p>
-<p>    ></p>
-<p>    > inside a list item.</p>
-<p>*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.</p>
-<p>    Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+
+    *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+        viverra nec, fringilla in, laoreet vitae, risus.
+        > This is a blockquote
+        >
+        > inside a list item.
+    *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+        Suspendisse id sem consectetuer libero luctus adipiscing.
   
 效果：
 *   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -253,11 +259,11 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
   
 
 例子：
-  
-><p>This is [an example](http://example.com/ "Title") inline link.</p>
-  
+
+    This is [an example](http://example.com/ "Title") inline link.
+
 效果：
-  
+
 >This is [an example](http://example.com/ "Title") inline link.
 
   
@@ -327,41 +333,47 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 #### 3.9.1 行内式的图片语法看起来像是：
 
     ![小猪佩奇](https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig2.jpg)
+
+效果：
+
 ![小猪佩奇](https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig2.jpg)
 
-    ![小猪佩奇](/peppa_pig.jpg "peppa pig")
-![小猪佩奇](/peppa_pig.jpg "peppa pig")
+    ![小猪佩奇](/peppa_pig.jpg "peppa pig")
+
+效果：
+
+>![小猪佩奇](/peppa_pig.jpg "peppa pig")
   
 
 #### 3.9.2 参考式的图片语法则长得像这样：
-  
-> ![Alt text][id]
->
-> 「id」是图片参考的名称，图片参考的定义方式则和链接参考一样：
->
-> \[id]: url/to/image  "Optional title attribute"
+
+    ![Alt text][id]
+    「id」是图片参考的名称，图片参考的定义方式则和链接参考一样：
+
+    [id]: url/to/image  "Optional title attribute"
 
 例子：
->    \[pig4]: https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig3.jpg "peppa=pig"
->
->    \![小猪佩奇]\[pig4]
+
+    [pig4]: https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig3.jpg "peppa=pig"
+
+    ![小猪佩奇]\[pig4]
+
+效果：
 
 [pig4]: https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig3.jpg "peppa=pig"
-![小猪佩奇][pig4]
+>![小猪佩奇][pig4]
   
   
 ### 3.10 其他
 #### 3.10.1 反斜杠
 Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果，你可以在星号的前面加上反斜杠：
-  
-  
+
 例子：
-  
-\\\*I like star.\\\*
-  
+
+    \*I like star.\*
+
 效果：
-  
-\*I like star.\*
+>\*I like star.\*
 
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
   
@@ -383,16 +395,16 @@ Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的�
 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样.
   
 例如：
-  
+
     <http://www.google.com>
 
     <lugl1@motorola.com>
 
 效果：
 
-<http://www.google.com>
+><http://www.google.com>
 
-<lugl1@motorola.com>
+><lugl1@motorola.com>
   
 
 ## 4. 参考资料
