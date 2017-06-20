@@ -53,14 +53,13 @@ Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如�
   
 
 例子：
-  
-<p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</p>
-<p>> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<p/>
-<p>> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-<p>></p>
-<p>> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</p>
-<p>> id sem consectetuer libero luctus adipiscing.</p>
-  
+
+    > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+    > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+    > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+    >
+    > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+    > id sem consectetuer libero luctus adipiscing.
 
 效果：
   
@@ -78,31 +77,31 @@ Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
   
 
 例子：
-  
-<p>> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,</p>
-<p>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<p/>
-<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-  
-<p>> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse</p>
-<p>id sem consectetuer libero luctus adipiscing.</p>
-  
+
+    > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+    > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+    id sem consectetuer libero luctus adipiscing.
 
 效果：
-  
+
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
-  
+
   <br>
 区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 > ：
-<p> This is the first level of quoting.</p>
-<p>></p>
-<p>> > This is nested blockquote.</p>
-<p>></p>
-<p>> Back to the first level.</p>
+
+     This is the first level of quoting.
+    >
+    > > This is nested blockquote.
+    >
+    > Back to the first level.
   
 效果：
   
@@ -114,14 +113,15 @@ id sem consectetuer libero luctus adipiscing.
   
 <br>
 引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：
-<p>> ## 这是一个标题。</p>
-<p>> </p>
-<p>> 1.   这是第一行列表项。</p>
-<p>> 2.   这是第二行列表项。</p>
-<p>> </p>
-<p>> 给出一些例子代码：</p>
-<p>> </p>
-<p>>     return shell_exec("echo $input | $markdown_script");</p>
+
+    > ## 这是一个标题。
+    > 
+    > 1.   这是第一行列表项。
+    > 2.   这是第二行列表项。
+    > 
+    > 给出一些例子代码：
+    > 
+    >     return shell_exec("echo $input | $markdown_script");
   
 效果：
   
