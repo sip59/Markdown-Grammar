@@ -432,6 +432,11 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
   
 
 ## 4. 参考资料
->[Markdown.cn](http://markdown.cn/)
+>+ [Markdown.cn](http://markdown.cn/)
 >
->[younghz/Markdown](https://github.com/younghz/Markdown)
+>+ [younghz/Markdown](https://github.com/younghz/Markdown)
+
+## 5. 哪些网站支持Markdown？
+>+ [Stack Overflow](https://stackoverflow.com/)
+>+ [简书](www.jianshu.com/)
+>+ [有道云笔记](http://note.youdao.com/)
