@@ -380,7 +380,7 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 
     [pig4]: https://github.com/sip59/Markdown-Grammar/blob/master/peppa_pig3.jpg "peppa=pig"
 
-    ![小猪佩奇]\[pig4]
+    ![小猪佩奇][pig4]
 
 效果：
 
