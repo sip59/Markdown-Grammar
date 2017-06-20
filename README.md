@@ -385,17 +385,15 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 例如：
   
     <http://www.google.com>
-  
+
     <lugl1@motorola.com>
-  
 
 效果：
-  
 
 <http://www.google.com>
-  
-<lugl1@motorola.com>
 
+<lugl1@motorola.com>
+  
 
 ## 4. 参考资料
 >[Markdown.cn](http://markdown.cn/)
